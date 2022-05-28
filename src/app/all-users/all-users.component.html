@@ -5,5 +5,14 @@
   <mat-card *ngFor="let data of users">
     <h2>Name: {{data.name}}</h2>
     <p>Phone No: {{data.phoneNo}}</p>
+
+    <mat-card-actions class="action">
+      <button mat-mini-fab color="accent" [routerLink]="['/', 'edit', data._id]">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-mini-fab color="primary">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
   </mat-card>
 </div>

@@ -14,6 +14,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {HttpClientModule} from '@angular/common/http';
+import {MatIconModule} from '@angular/material/icon';
 
 const config: SocketIoConfig = {url: environment.socketBaseLink, options: {}};
 
@@ -23,18 +24,19 @@ const config: SocketIoConfig = {url: environment.socketBaseLink, options: {}};
     AllUsersComponent,
     AddUserComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    SocketIoModule.forRoot(config),
-    MatCardModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        SocketIoModule.forRoot(config),
+        MatCardModule,
+        ReactiveFormsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        HttpClientModule,
+        MatIconModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

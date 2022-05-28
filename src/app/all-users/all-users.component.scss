@@ -9,3 +9,8 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
+
+.action {
+  display: flex;
+  gap: 5px;
+}

@@ -24,5 +24,14 @@ export class UserService {
   }
 
 
+  editUser(id: string, data: User) {
+    return this.http.put<{success: boolean, message: string, data: User}>('http://localhost:3000/edit-user/' + id, data)
+  }
+
+  getUserById(id: string) {
+    return this.http.get<{success: boolean, message: string, data: User}>('http://localhost:3000/get-user/' + id)
+  }
+
+
 
 }
